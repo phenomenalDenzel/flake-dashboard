@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-shadow: 0 2px 3px #ccc;
+  text-align: center;
+  border-radius: 5px;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .card:hover,
+.card:active {
+  cursor: pointer;
+  box-shadow: 0 2px 3px #6c0ba9;
+} */
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card-md {
+  width: 200px;
+  height: 150px;
+}

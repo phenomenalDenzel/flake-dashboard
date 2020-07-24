@@ -1,0 +1,6 @@
+.collections-card:hover,
+.collections-card:active,
+.cards .active {
+  cursor: pointer;
+  box-shadow: 0 2px 3px #6c0ba9;
+}

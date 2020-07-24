@@ -1,0 +1,34 @@
+.feeds {
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-top: 2px solid #51087e;
+  box-shadow: 0 2px 30px #eee;
+}
+
+.feeds ul {
+  list-style: none;
+}
+
+.feeds ul li {
+  background: #fff;
+  padding: 1.25rem;
+  margin-bottom: 0.45rem;
+}
+.feeds ul li .feed-date {
+  float: right;
+}
+.feeds ul li .user-info {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.feeds ul li .user-info .user-image {
+  background: url("../../assets/images/person-1.jpg") no-repeat center
+    center/cover;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}

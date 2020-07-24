@@ -1,0 +1,262 @@
+.Container {
+  margin-top: 20px;
+}
+
+.RadioContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+}
+.SummaryContainer .Radio {
+  position: relative;
+  cursor: pointer;
+  font-size: 22;
+  user-select: none;
+  padding-left: 30px;
+}
+
+.SummaryContainer .Radio input {
+  display: none;
+}
+
+.SummaryContainer .Radio .Circle {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.SummaryContainer .Radio .Circle:hover {
+  background-color: #ccc;
+}
+
+.SummaryContainer .Radio input:checked + .Circle {
+  background-color: #51087e;
+}
+
+.SummaryContainer .Radio input:checked + .Circle:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Summary {
+  margin-top: 20px;
+  display: flex;
+  width: 1000px;
+}
+
+.Summary img {
+  width: 250px;
+  height: 250px;
+  margin-top: 15px;
+}
+
+.Summary ul {
+  list-style: none;
+  width: 100%;
+}
+
+.Summary ul li {
+  padding: 13px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.Analysis {
+  display: flex;
+  justify-content: flex-end;
+}
+.LeftView {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  align-items: stretch;
+  justify-content: center;
+}
+.vendorBox {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.vendorBox label {
+  position: relative;
+  cursor: pointer;
+}
+
+.vendorBox label input {
+  display: none;
+}
+
+.vendorBox label span {
+  position: relative;
+  display: inline-block;
+  height: 70px;
+  width: 150px;
+  transition: 200ms;
+  transform: scale(1);
+}
+.vendorBox label input:checked ~ span {
+  border: 1px solid #ff9900;
+}
+.vendorBox label input:checked ~ span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ddd;
+  z-index: -1;
+  filter: blur(10px);
+}
+/* .vendorBox label input:checked ~ span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ddd;
+  z-index: -1;
+  filter: blur(10px);
+} */
+.vendorBox label input:checked ~ span.Abe {
+  border: 2px solid #e53238;
+  /* box-shadow: inset 0 0 10px #e53238; */
+}
+.vendorBox label input:checked ~ span.Amazon {
+  border: 2px solid #ff9900;
+  /* box-shadow: inset 0 0 10px #ff9900; */
+}
+.vendorBox label span.Amazon:hover {
+  border: 2px solid #ff9900;
+  transform: scale(1.1);
+}
+.vendorBox label span.Abe:hover {
+  border: 2px solid #e53238;
+  transform: scale(1.1);
+}
+.vendorBox label span.Abe:active {
+  border: 2px solid #e53238;
+  transform: scale(1.1);
+}
+.vendorBox label span.Amazon:active {
+  border: 2px solid #ff9900;
+  transform: scale(1.1);
+}
+.Abe img,
+.Amazon img {
+  height: 100%;
+  width: 100%;
+}
+
+.reviews {
+  border-top: 2px solid #51087e;
+  box-shadow: 0 2px 30px #eee;
+  list-style: none;
+  float: right;
+  width: 65%;
+}
+
+.reviews li {
+  background: #fff;
+  padding: 1.25rem;
+  margin-bottom: 0.45rem;
+  width: 100%;
+}
+
+.userAvatar {
+  background: #b5b3ca;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+.userInfo {
+  float: right;
+  width: 720px;
+}
+
+.date {
+  float: right;
+}
+.userName {
+  float: left;
+}
+
+.avgRatingWrapper {
+  background: #fff;
+  padding: 10px;
+  float: left;
+  width: 34%;
+}
+.avgRatings {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .avgRatings li h4 {
+  display: inline-block;
+} */
+
+.avg h3 {
+  font-size: 80px;
+  font-weight: 100;
+}
+ul {
+  width: 80%;
+}
+.rate:not(:first-child) {
+  margin-top: 10px;
+}
+.avgRatings ul li {
+  display: flex;
+  align-items: center;
+}
+
+.avgRatings ul li .outerBar {
+  position: relative;
+  background: #eee;
+  width: 100%;
+  height: 13px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.outerBar .innerBar {
+  background: #f8c30b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* float: left; */
+  height: 13px;
+  width: 0;
+  /* animation: innerBar 2s; */
+  transition: all 2s;
+}
+
+@keyframes innerBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+/* #ff9900 */
+/* #e53238 */

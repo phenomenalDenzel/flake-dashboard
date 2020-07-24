@@ -1,0 +1,35 @@
+.btn {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  font-weight: bold;
+}
+.btns:hover {
+  background-color: #000;
+}
+/* .btn:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+} */
+
+.primary {
+  color: #51087e;
+}
+.fill {
+  background: #51087e;
+  color: #fff;
+}
+.stroke {
+  border: 1px solid #51087e;
+  color: #51087e;
+}
+.stroke:hover {
+  background-color: #eee;
+}
+.tablet {
+  border: none;
+  border-radius: 100px;
+}

@@ -1,0 +1,36 @@
+.BookList {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.BookList a {
+  text-decoration: none;
+  color: #000800;
+}
+.BookItem {
+  display: flex;
+  padding: 0.85rem;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  margin-top: 0.7rem;
+  box-shadow: 0 2px 3px #ccc;
+  border-radius: 5px;
+}
+.BookItem .ThumbnailSection img {
+  width: 150px;
+  height: 100%;
+}
+.BookSummary {
+  padding: 20px;
+}
+.BookSummary h3,
+.BookSummary h4 {
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.BookSummary div {
+  display: flex;
+  align-items: center;
+}
